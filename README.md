@@ -3,7 +3,7 @@ properties2xml
 
 Online convertor for java properties to XML format. 
 
-### → [Online convertor](https://github.com/todvora/properties2xml)
+### → [Online convertor](http://todvora.github.io/properties2xml)
 
 ## About properties
 
