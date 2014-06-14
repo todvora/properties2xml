@@ -23,14 +23,13 @@ This files are often used also for localization of applications. But it has seve
  - You need to use `native2ascii` to convert your texts in UTF to correct representation
  - Its very hard to read file full of \uXXXX symbols
  
- For example, this is ascii encoded version of Czech words "žluťoučký kůň" - "\u017elu\u0165ou\u010dk\u00fd k\u016f\u0148", 
- or city in Germany, "München" becomes "M\u00fcnchen".
+For example, this is ascii encoded version of Czech words "žluťoučký kůň" - "\u017elu\u0165ou\u010dk\u00fd k\u016f\u0148",  or city in Germany, "München" becomes "M\u00fcnchen".
  
- Solution could be to use smart IDE, which can convert this characters on the fly. Or switch properties to XML. Once you convert your files to XML, you don't need to convert symbols anymore, they can be UTF-8 encoded. Everything else works in the same way, as with .properties files.
+Solution could be to use smart IDE, which can convert this characters on the fly. Or switch properties to XML. Once you convert your files to XML, you don't need to convert symbols anymore, they can be UTF-8 encoded. Everything else works in the same way, as with .properties files.
 
- This is how properties in XML look like:
- ```
- <?xml version="1.0" encoding="UTF-8"?>
+This is how properties in XML look like:
+```
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
     <entry key="dbpassword">password</entry>
