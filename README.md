@@ -13,6 +13,9 @@ Standard Java properties looks something like this:
 dbpassword=password
 database=localhost
 dbuser=root
+
+czech=\u017elu\u0165ou\u010dk\u00fd k\u016f\u0148
+deutsch=M\u00fcnchen
 ```
 
 This files are often used also for localization of applications. But it has several limitations, which makes pretty hard to use them:
@@ -33,5 +36,8 @@ This files are often used also for localization of applications. But it has seve
     <entry key="dbpassword">password</entry>
     <entry key="database">localhost</entry>
     <entry key="dbuser">root</entry>
+    
+    <entry key="czech">žluťoučký kůň</entry>
+    <entry key="deutsch">München</entry>
 </properties>
  ```
