@@ -1,5 +1,5 @@
 var joinParts = function(parts) {
-    return parts.join("=")
+    return eval("'"+parts.join("=")+"'");
 }
 
 var transform = function(text, separator) {
