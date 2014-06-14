@@ -3,7 +3,7 @@ properties2xml
 
 Online convertor for java properties to XML format. 
 
-## -> (Online convertor)[https://github.com/todvora/properties2xml]
+### → [Online convertor](https://github.com/todvora/properties2xml)
 
 ## About properties
 
@@ -23,8 +23,8 @@ This files are often used also for localization of applications. But it has seve
  For example, this is ascii encoded version of Czech words "žluťoučký kůň" - "\u017elu\u0165ou\u010dk\u00fd k\u016f\u0148", 
  or city in Germany, "München" becomes "M\u00fcnchen".
  
- Solution could be to use smart IDE, which can convert this characters on the fly. Or switch properties to XML. They can be in UTF-8 and everything works nicely.
- 
+ Solution could be to use smart IDE, which can convert this characters on the fly. Or switch properties to XML. Once you convert your files to XML, you don't need to convert symbols anymore, they can be UTF-8 encoded. Everything else works in the same way, as with .properties files.
+
  This is how properties in XML look like:
  ```
  <?xml version="1.0" encoding="UTF-8"?>
