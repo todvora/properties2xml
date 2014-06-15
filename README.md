@@ -49,7 +49,7 @@ message = Welcome to \
 ```
 where the backslash before end of line says, that second line is continuation of the first line.
 
-Second not implemented funcion is `:` as key and value devider. 
+Second not implemented feature is `:` as key and value devider. For example:
 ```
 label : text description of input field
 ```
