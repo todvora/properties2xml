@@ -1,7 +1,7 @@
 properties2xml
 ==============
 
-Online convertor for java properties to XML format. 
+Online convertor for java .properties files to XML format. 
 
 ### → [Online convertor](http://todvora.github.io/properties2xml)
 
@@ -41,15 +41,17 @@ This is how properties in XML look like:
 </properties>
  ```
 
-## Limitations
-There are currently two important, not implement functions. The first one is multiline value, for example 
+## Limitations - multiline, semicolons
+There are currently two not implement features of .properties files. The first one is multiline value, for example 
 ```
 message = Welcome to \
           Wikipedia
 ```
 where the backslash before end of line says, that second line is continuation of the first line.
 
-Second not implemented feature is `:` as key and value devider. For example:
+Second not implemented feature is `:` as key and value separator. For example:
 ```
-label : text description of input field
+label: text description of input field
 ```
+
+Example of really complicated input can be seen on [wikipedia](http://en.wikipedia.org/wiki/.properties). 
