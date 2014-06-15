@@ -5,7 +5,10 @@ if (typeof String.prototype.startsWith != 'function') {
 }
 
 var joinParts = function(parts) {
-    return eval("'"+parts.join("=")+"'");
+    var orig = parts.join("=").trim();
+    return orig.replace(/\\u(\w{4})/gi, function(token) {
+        return String.fromCharCode(parseInt(token.substr(2), 16));
+    })
 };
 
 var createCommentElement = function(line) {
