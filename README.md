@@ -40,3 +40,16 @@ This is how properties in XML look like:
     <entry key="deutsch">München</entry>
 </properties>
  ```
+
+## Limitations
+There are currently two important, not implement functions. The first one is multiline value, for example 
+```
+message = Welcome to \
+          Wikipedia
+```
+where the backslash before end of line says, that second line is continuation of the first line.
+
+Second not implemented funcion is `:` as key and value devider. 
+```
+label : text description of input field
+```
