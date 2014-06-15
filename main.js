@@ -40,7 +40,7 @@ var parseLines = function(lines, separator) {
     }
 
     var parts = line.split("=");
-    var key = parts.shift();
+    var key = parts.shift().replace(/\\\ /g, " ");
     var value = joinParts(parts);
     return  formatLineOutput(createEntryElement(key,value), separator) + parseLines(lines, separator);
 };
