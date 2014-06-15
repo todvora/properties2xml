@@ -29,7 +29,6 @@ var parseLines = function(lines, separator) {
     }
 
     var line = lines.shift().trim();
-    console.log("Line:" + line);
 
     if(line.length == 0) {
         return formatLineOutput("", separator) + parseLines(lines, separator);
